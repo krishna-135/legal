@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BT Mobile Keyboard</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1e293b;
+            --muted-text: #64748b;
+            --accent-color: #0284c7;
+            --box-bg: rgba(2, 132, 199, 0.05);
+            --border-color: #e2e8f0;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --line-height: 1.6;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-color: #f8fafc;
+                --muted-text: #94a3b8;
+                --accent-color: #0284c7;
+                --box-bg: rgba(2, 132, 199, 0.1);
+                --border-color: #334155;
+            }
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: var(--line-height);
+            margin: 0;
+            padding: 24px;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: var(--text-color);
+            letter-spacing: -0.025em;
+        }
+
+        .meta {
+            font-size: 0.875rem;
+            color: var(--muted-text);
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--accent-color);
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 16px;
+            color: var(--text-color);
+        }
+
+        ol, ul {
+            margin-top: 0;
+            margin-bottom: 16px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background-color: var(--box-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            border-radius: 6px;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective Date: August 13, 2026 | Version 1.0</div>
+
+    <div class="highlight-box">
+        <strong>Offline &amp; Privacy First:</strong> BT Mobile Keyboard is a privacy-focused wireless keyboard application. Keystrokes typed on the virtual keyboard are processed directly on your device and sent to your paired system over local Bluetooth. We do not collect, store, or transmit your inputs or personal data to any external servers.
+    </div>
+
+    <h2>1. Information We Do Not Collect</h2>
+    <p>Because BT Mobile Keyboard operates primarily as a Bluetooth Human Interface Device (HID) hardware emulator, it does not collect, record, or transmit keypress events, modifier combinations, custom shortcuts, or user text entries. All typed characters are processed in volatile memory and converted into standard USB HID reports sent directly to the paired computer via local Bluetooth.</p>
+
+    <h2>2. Local Storage &amp; Encryption</h2>
+    <p>Any configuration preferences, key visibility configurations, and custom keyboard shortcuts are stored locally in Android's shared preferences. Sensitive settings, such as paired PC certificates or security identifiers, are encrypted on-device using Android's Keystore-backed <code>EncryptedSharedPreferences</code>. This information never leaves your device and is deleted when the application is uninstalled or user data is cleared.</p>
+
+    <h2>3. Local PC Clipboard Sync (Optional)</h2>
+    <p>If you explicitly enable the "PC Clipboard Sync" option in the settings, the app will monitor your clipboard and transmit copied text content over your local area network (LAN) directly to the target IP address and port configured for your PC. 
+    This traffic does not touch the public internet and can be enforced to use TLS/HTTPS to protect the clipboard payload from local network interception.
+    </p>
+
+    <h2>4. Application Permissions</h2>
+    <p>To function as a Bluetooth keyboard, the app requests the following system permissions:</p>
+    <ul>
+        <li><strong>Bluetooth / Bluetooth Connect / Bluetooth Scan:</strong> Required to scan for, pair with, and connect to host PCs to send input reports.</li>
+        <li><strong>Internet:</strong> Required only for local-network clipboard sync payloads. The app does not access external websites or analytical tracking hosts.</li>
+        <li><strong>Foreground Service:</strong> Used to maintain keyboard connectivity and prevent device sleep state interruptions during typing.</li>
+        <li><strong>Vibrate:</strong> Utilized to trigger physical keypress tactile vibration feedback.</li>
+    </ul>
+
+    <h2>5. Contact Information</h2>
+    <p>For questions or support regarding this Privacy Policy, please contact us at: <a href="mailto:krishna10359@gmail.com">krishna10359@gmail.com</a>.</p>
+</body>
+</html>
